@@ -36,6 +36,7 @@ function init() {
 			innerArchive: false,
 			friends: false,
 			aboutme: false,
+			proverb: false,
 			items: [],
 			jsonFail: false,
 			showTags: false,
@@ -66,6 +67,7 @@ function init() {
   				app.$set('innerArchive', false)
   				app.$set('friends', false)
   				app.$set('aboutme', false)
+  				app.$set('proverb', false)
   				app.$set(type, true)
   				app.$set('isShow', true)
   				app.$set('isCtnShow', true)
@@ -83,9 +85,6 @@ function init() {
 	    		return str !== ''
 	    	},
 	    	urlformat: (str) => {
-				if (window.yiliaConfig && window.yiliaConfig.root) {
-					return window.yiliaConfig.root + str
-				}
 	    		return '/' + str
 	    	},
 	    	tagformat: (str) => {
@@ -186,6 +185,7 @@ function init() {
 			app.$set('innerArchive', true)
 			app.$set('friends', false)
 			app.$set('aboutme', false)
+			app.$set('proverb', false)
 			app.$set('isShow', true)
 			app.$set('isCtnShow', true)
 			app.$set('search', '#' + $em.innerHTML)

@@ -1,3 +1,10 @@
+<%if(!post.nodate){%>
+    <a href="<%- url_for(post.path) %>" class="<%= class_name %>">
+        创建于<time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><i class="icon-calendar icon"></i><%= date(post.date, 'Y-MM-DD a') %></time>
+    </a>
+    <br>
+<%}%>
 <a href="<%- url_for(post.path) %>" class="<%= class_name %>">
-  	<time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><i class="icon-calendar icon"></i><%= date(post.date, date_format) %></time>
+最后修改
+    <time datetime="<%= date_xml(post.modifier) %>" itemprop="datePublished"><i class="icon-calendar icon"></i><%= date(post.updated, 'Y-MM-DD HH:MM') %></time>
 </a>
