@@ -13,8 +13,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
+        <img src="/images/dogs.gif"></p>
             <%- body %>
           </div>
+  <% if (theme.valine && theme.valine.appid && theme.valine.appkey){ %>
+    <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+      <%- partial('_partial/post/valine', {
+        key: false,
+        title: "main_page",
+        url: config.url+url_for("main_page")
+        }) %>
+    </section>
+  <% } %>
+
         </div>
       </div>
       <%- partial('_partial/footer') %>
