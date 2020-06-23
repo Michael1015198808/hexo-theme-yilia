@@ -6,5 +6,5 @@
 <%}%>
 <a href="<%- url_for(post.path) %>" class="<%= class_name %>">
 最后修改
-    <time datetime="<%= date_xml(post.modifier) %>" itemprop="datePublished"><i class="icon-calendar icon"></i><%= date(post.updated, 'Y-MM-DD HH:MM') %></time>
+    <time datetime="<%= date_xml(post.modifier) %>" itemprop="datePublished"><i class="icon-calendar icon"></i><%= date(post.updated, 'Y-MM-DD HH:mm') %></time>
 </a>
