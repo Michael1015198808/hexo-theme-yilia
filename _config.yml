@@ -8,15 +8,16 @@ menu:
 subnav:
   github: "https://github.com/Michael1015198808"
   weibo: "https://weibo.com/p/1005053911976060"
-  #rss: /atom.xml
+  rss: /atom.xml
   #psn: "#"
-  #zhihu: "#"
-  #douban: "#"
+  zhihu: "https://www.zhihu.com/people/yan-zhen-yu-89-16"
+  douban: "https://www.douban.com/people/153751793"
   #segmentfault: "#"
-  #bilibili: "#"
+  bilibili: "https://space.bilibili.com/169316082"
   #acfun: "#"
   #mail: "mailto:litten225@qq.com"
-  #facebook: "#"
+  facebook: "https://www.facebook.com/profile.php?id=100009286741709"
+  #instagram: "https://www.instagram.com/michael1015198808/"
   #google: "#"
   #twitter: "#"
   #linkedin: "#"
@@ -26,7 +27,7 @@ rss: /atom.xml
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-root: 
+root: /blog/
 
 # Content
 excerpt_link: 'more'
@@ -104,37 +105,61 @@ slider:
 smart_menu:
   innerArchive: '所有文章'
   friends: '友情链接'
-  aboutme: '关于我'
+  aboutme: '最近在做'
   proverb: '箴言'
 
 friends:
-  黄秉焜: https://congee524.github.io/
+    #黄秉焜: https://congee524.github.io/
   张天昀: https://doowzs.com/
-  萌捷列夫: https://mengzelev.github.io
+  匡舒磊: https://shelah-kuang.github.io/
   Maxwell Lyu: https://maxwell-lyu.github.io/
+  萌捷列夫: https://mengzelev.github.io/
+  Jude: https://judie1999.github.io/
+  lynx: https://niabie.github.io/
+  Jarvis Zhang: https://jarviszl.github.io/
+  Marukohe He: https://marukohe.github.io/
+  Larry Yin: https://larryytr.github.io/
+  梁宇方: https://lanceloia.github.io/
+  xy: https://nju-xy.github.io/
+  forewing : https://jbesu.com/
+  友情链接互挂帮助: /files/friend-link.html
 
 intro:
   张天昀: 19岁，是学生。
   萌捷列夫: 好时代，来临吧！
+  匡舒磊: 落败孤岛孤落败
+  forewing: 爱慕拆妮子
 
 aboutme: "
 <ul>
-    <li> <h1>最近在做：</h1>
-        之前欠下的PA作业<br>
-        <a href=\"/2019/01/14/2019寒假计划/\">寒假规划</a>
-<br>
-    <br><li> <h1>最近在学：</h1>
-        法语
-            <h5>词汇量大概30-40吧(笑)</h5>
+<br><br>
+    <li> <h1>学：</h1>
+        日语
+            <h5>词汇量大概50-70吧(笑)</h5>
             <h6>(这两个数字是在缓慢地动态变化的)</h6>
-        <br>英语
-            <h5>感觉听力和阅读应该挺稳的</h5>
-    <br><li> <h1>最近在玩：</h1>
-        PVZ2(国际版)
-            <h5>只玩battlez和每日三刷碎片两次</h5>
-            <h5>氪了一只冰龙草$4.99</h5>
-    <li><a href=\"/1999/03/26/我\"> More info </a>
+        英语
+            <h5>听力和阅读为主</h5>
+        vi&vim
+            <h5>想配出最酷（sao）的vim！</h5>
+<br><br>
+    <li> <h1>做：</h1>
+        背单词小工具<a href=\"/2019/04/21/zsh-vocab开发心路历程/\">zsh-vocab</a>
+<br><br><br>
+    <li><a href=\"/files/intro.html\"> More info </a>
 </ul>
 "
 
-proverb: 产生了某些bug，等待修复(预计要两周)<br>
+proverb: '
+""我们必须知道，我们终将知道"<br>
+——大卫·希尔伯特<br><br>
+"我们生活在阴沟里，依然能够仰望天空"<br>
+——奥斯卡·王尔德
+'
+
+valine:
+    appid: uLiRl9PVCoTJtRGlF7vcpqWk-gzGzoHsz
+    appkey: jiNB6sTJ99mzmXbTER3fYyF2
+    verify: false
+    notify: true
+    avatar: mm
+    placeholder: Say something?
